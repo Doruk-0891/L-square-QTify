@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Logo />
             </Link>
             <SearchBar placeholder="Search a song of your choice" />
-            <DarkButton>Give feedback</DarkButton>
+            <DarkButton children="Give Feedback" />
         </nav>
     );
 }
