@@ -28,6 +28,7 @@
     padding: 4px 8px 4px 8px;
     gap: 1px;
     border-radius: 10px;
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: var(--color-dark) !important;
+    color: var(--color-light) !important;
+    margin-top: 2px;
 }

@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <>
             <Hero hero_details={hero_props} />
-            <Section title='Top Albums' />
+            <Section />
         </>
     );
 }
