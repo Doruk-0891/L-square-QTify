@@ -13,4 +13,6 @@
 body {
   margin: 0;
   font-family: "Poppins";
+  background: var(--color-dark);
+  color: var(--color-light);
 }

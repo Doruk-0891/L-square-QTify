@@ -1,0 +1,33 @@
+.container {
+    width: 159px;
+    height: 232px;
+}
+
+.imageSection {
+    width: 100%;
+    height: 205px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 82%;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.pill {
+    margin-left: 6px;
+    padding: 4px 8px 4px 8px;
+    gap: 1px;
+    border-radius: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
