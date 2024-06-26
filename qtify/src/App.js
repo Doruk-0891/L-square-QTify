@@ -1,7 +1,7 @@
 import React, { useEffect, useState }  from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import { fetchNewAlbums, fetchTopAlbums } from "./api/api";
+import { fetchNewAlbums, fetchTopAlbums, fetchSongs } from "./api/api";
 
 const App = () => {
   const [data, setData] = useState({});
@@ -9,6 +9,7 @@ const App = () => {
   useEffect(() => {
     generateData('topAlbums', fetchTopAlbums);
     generateData('newAlbums', fetchNewAlbums);
+    generateData('songs', fetchSongs);
   }, []);
 
   const generateData = (key, source) => {
@@ -18,11 +19,11 @@ const App = () => {
       });
     });
   }
-  const {topAlbums=[], newAlbums=[]} = data;
+  const {topAlbums=[], newAlbums=[], songs=[]} = data;
   return (
     <div className="App">
       <Navbar />
-      <Outlet context={{data: {topAlbums, newAlbums}}} />
+      <Outlet context={{data: {topAlbums, newAlbums, songs}}} />
     </div>
   );
 }

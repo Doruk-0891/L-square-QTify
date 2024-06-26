@@ -22,4 +22,24 @@ const fetchNewAlbums = async() => {
     }
 }
 
-export {fetchNewAlbums, fetchTopAlbums};
+const fetchSongs = async() => {
+    const url = `${BACKEND_ENDPOINT}/songs`;
+    try {
+        const songsResponse = await axios.get(url);
+        return songsResponse.data;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+const fetchGenres = async() => {
+    const url = `${BACKEND_ENDPOINT}/genres`;
+    try {
+        const genresResponse = await axios.get(url);
+        return genresResponse.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export {fetchNewAlbums, fetchTopAlbums, fetchSongs, fetchGenres};
