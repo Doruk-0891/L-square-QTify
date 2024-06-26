@@ -16,13 +16,13 @@ const Filters = ({filters, selectedFilterIndex, setSelectedFilterIndex}) => {
   };
 
   return (
-    <div>
+    <div style={{color: 'white'}}>
         <Tabs value={selectedFilterIndex} onChange={handleChange} aria-label="genres tabs"
-        textColor='var(--color-light)'
+        textColor = "inherit"
         TabIndicatorProps={
             {
                 style: {
-                    backgroundColor: "var(--color-primary)"
+                    backgroundColor: "var(--color-primary)",
                 }
 
             }
